@@ -8,10 +8,13 @@
     <script>
         var available=30;
         n=10;
-        
         function movies(){
-            book=parseInt(window.prompt("Enter no.of tickets : ","1"));
-        if(book>5 && book>available){
+        book=parseInt(window.prompt("Enter no.of tickets : ","1"));
+        
+        if(book>available){
+            window.alert("Tickets are not available Available tickets : "+available);
+        }
+        if(book>5){
             window.alert("Only 5 tickets can be booked at a time");
         }
         else{
@@ -26,6 +29,7 @@
            
            document.write("<br>Discount : "+discount);
            document.write("<br>Total amount : "+(cost-discount));
+
            
         }
     }
@@ -33,6 +37,7 @@
         for(i=1;i<=n;i++){
         movies();
         available=available-book;
+        document.write("available : "+available);
         }
     </script>
 </head>
