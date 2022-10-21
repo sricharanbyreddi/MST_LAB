@@ -1,0 +1,11 @@
+CODE:
+//using CONSOLE:
+  console.log("This is RAJESH");
+ output:
+  This is RAJESH
+  
+CODE:
+//using DOCUMENT:
+  document.write("This is RAJESH");
+ OUTPUT:
+  referenceError:document is not defined
